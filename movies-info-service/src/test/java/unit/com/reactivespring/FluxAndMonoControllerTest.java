@@ -1,5 +1,6 @@
 package com.reactivespring;
 
+import com.reactivespring.controller.FluxAndMonoController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
@@ -8,8 +9,6 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.test.StepVerifier;
 
 import java.util.Objects;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @WebFluxTest(controllers = FluxAndMonoController.class)
 @AutoConfigureWebTestClient
