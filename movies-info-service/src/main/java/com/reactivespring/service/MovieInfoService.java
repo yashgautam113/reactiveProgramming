@@ -15,4 +15,8 @@ public class MovieInfoService {
     public Mono<MovieInfo> adMovieInfo(MovieInfo movieInfo) {
         return movieInfoRepository.save(movieInfo).log();
     }
+
+    public Mono<MovieInfo> getMovieInfoById(String id) {
+        return movieInfoRepository.findById(id);
+    }
 }
